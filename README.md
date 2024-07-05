@@ -1,6 +1,6 @@
 # SMAPS
 
-A helper library for parsing the `/proc/<pid>/smaps file` on linux
+A helper library for parsing the `/proc/<pid>/smaps` file on linux
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-brightgreen.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![Discord](https://dcbadge.vercel.app/api/server/JYmFhtdPeu?style=flat)](https://loopholelabs.io/discord)
