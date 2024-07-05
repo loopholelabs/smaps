@@ -1,14 +1,14 @@
-# TLS
+# SMAPS
 
-A Template Repsitory for use with Golang projects
+A helper library for parsing the `/proc/<pid>/smaps file` on linux
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-brightgreen.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![Discord](https://dcbadge.vercel.app/api/server/JYmFhtdPeu?style=flat)](https://loopholelabs.io/discord)
-![Go Version](https://img.shields.io/badge/go%20version-%3E=1.18-61CFDD.svg)
+![Go version](https://img.shields.io/github/go-mod/go-version/loopholelabs/smaps)
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at [https://github.com/loopholelabs/template-go][gitrepo]. For more contribution information check out [the contribution guide](contributing).
+Bug reports and pull requests are welcome on GitHub at [https://github.com/loopholelabs/smaps][gitrepo]. For more contribution information check out [the contribution guide](contributing).
 
 ## License
 
@@ -22,7 +22,7 @@ Everyone interacting in this project's codebases, issue trackers, chat rooms and
 
 [![https://loopholelabs.io][loopholelabs]](https://loopholelabs.io)
 
-[gitrepo]: https://github.com/loopholelabs/template-go
-[contributing]: https://github.com/loopholelabs/template-go/blob/master/CONTRIBUTING.md
+[gitrepo]: https://github.com/loopholelabs/smaps
+[contributing]: https://github.com/loopholelabs/smaps/blob/main/CONTRIBUTING.md
 [loopholelabs]: https://cdn.loopholelabs.io/loopholelabs/LoopholeLabsLogo.svg
 [loophomepage]: https://loopholelabs.io
