@@ -12,6 +12,7 @@ import (
 
 const (
 	Dump0BashIdentifier Identifier = "/usr/bin/bash"
+	Dump0LCIdentifier   Identifier = "/usr/lib/locale/C.utf8/LC_CTYPE"
 )
 
 var (
@@ -33,6 +34,11 @@ func TestParseDump0(t *testing.T) {
 		assert.Equal(t, Dump0BashAddresses[i], smap.Address)
 		assert.True(t, smap.IsPath)
 	}
+
+	assert.Len(t, smaps[Dump0LCIdentifier], 1)
+	assert.Equal(t, smaps[Dump0LCIdentifier][0].Size, int64(352*1024))
+	assert.Equal(t, smaps[Dump0LCIdentifier][0].Rss, int64(112*1024))
+	assert.Equal(t, smaps[Dump0LCIdentifier][0].SharedClean, int64(112*1024))
 }
 
 func TestParseDump1(t *testing.T) {
