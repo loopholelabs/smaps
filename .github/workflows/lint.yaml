@@ -3,7 +3,7 @@ name: Lint
 on: [pull_request]
 
 jobs:
-  golang:
+  golang-lint:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

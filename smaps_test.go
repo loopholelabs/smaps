@@ -18,7 +18,7 @@ var (
 	Dump0BashAddresses = []string{"55f3e5c55000-55f3e5c84000", "55f3e5c84000-55f3e5d6e000", "55f3e5d6e000-55f3e5da3000", "55f3e5da3000-55f3e5da7000", "55f3e5da7000-55f3e5db0000"}
 )
 
-func TestParse(t *testing.T) {
+func TestParseDump0(t *testing.T) {
 	file, err := os.Open("testdata/dump0.txt")
 	require.NoError(t, err)
 
@@ -33,4 +33,14 @@ func TestParse(t *testing.T) {
 		assert.Equal(t, Dump0BashAddresses[i], smap.Address)
 		assert.True(t, smap.IsPath)
 	}
+}
+
+func TestParseDump1(t *testing.T) {
+	file, err := os.Open("testdata/dump1.txt")
+	require.NoError(t, err)
+
+	smaps, err := Parse(file)
+	require.NoError(t, err)
+
+	assert.Equal(t, 346, len(smaps))
 }
